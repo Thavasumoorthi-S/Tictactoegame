@@ -144,7 +144,6 @@ public class Game
             {
                 logger.info("Game is draw");
                 logger.info("play again");
-                break;
             }
             else
             {
