@@ -26,7 +26,7 @@ class Tictac
         for (char[] chars : board) {
             logger.info("|");
             for (char aChar : chars) {
-                logger.info(aChar + " | ");
+                logger.log(Level.INFO,()->aChar + " | ");
             }
             logger.info("\n");
             logger.info("------------");
