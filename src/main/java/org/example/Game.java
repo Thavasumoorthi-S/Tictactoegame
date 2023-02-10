@@ -4,7 +4,7 @@ import java.util.logging.Logger;
 
 class Tictac
 {
-    static Logger logger=Logger.getLogger("com-api-jar");
+     private static final Logger logger=Logger.getLogger("com-api-jar");
     static char[][] board;
     public Tictac()
     {
@@ -85,7 +85,7 @@ class Tictac
 }
 class person
 {
-    Logger logger=Logger.getLogger("com-api-jar");
+    private static final Logger logger=Logger.getLogger("com-api-jar");
     String name;
     char symbol;
 
@@ -124,9 +124,9 @@ class person
 
 public class Game
 {
+    private static final Logger logger=Logger.getLogger("com-api-jar");
     public static void main(String[] args)
     {
-        Logger logger=Logger.getLogger("com-api-jar");
         Tictac t=new Tictac();
         person p1=new person("THAVASU",'X');
         person p2=new person("MOORTHI",'O');
