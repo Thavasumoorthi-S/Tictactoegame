@@ -4,13 +4,9 @@ import java.util.logging.Logger;
 
 class Tictac
 {
-     private static final Logger logger=Logger.getLogger("com-api-jar");
-    static char[][] board;
-    public Tictac()
-    {
-        board=new char[3][3];
-        boarddesign();
-    }
+    private static final Logger logger=Logger.getLogger("com-api-jar");
+    static char[][] board=new char[3][3];
+
     void boarddesign()
     {
         for(int i=0;i<board.length;i++)
@@ -128,6 +124,7 @@ public class Game
     public static void main(String[] args)
     {
         Tictac t=new Tictac();
+        t.boarddesign();
         person p1=new person("THAVASU",'X');
         person p2=new person("MOORTHI",'O');
         person c;
