@@ -133,7 +133,7 @@ public class Game
             if(Tictac.horizontalcheck()||Tictac.verticalcheck()||Tictac.diagonalcheck())
             {
                 logger.info(c.name+" is win the game");
-                logger.info("congratulation "+c.name);
+                logger.fine("congratulation {}"+c.name);
                 break;
             }
             else if(Tictac.checkdraw())
