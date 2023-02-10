@@ -75,13 +75,13 @@ class Tictac
         return true;
     }
 }
-class person
+class Person
 {
     private static final Logger logger=Logger.getLogger("com-api-jar");
     String name;
     char symbol;
 
-    person(String name,char symbol)
+    Person(String name,char symbol)
     {
         this.name=name;
         this.symbol=symbol;
@@ -121,9 +121,9 @@ public class Game
     {
         Tictac t=new Tictac();
         t.boarddesign();
-        person p1=new person("THAVASU",'X');
-        person p2=new person("MOORTHI",'O');
-        person c;
+        Person p1=new Person("THAVASU",'X');
+        Person p2=new Person("MOORTHI",'O');
+        Person c;
         c=p1;
         while (true)
         {
