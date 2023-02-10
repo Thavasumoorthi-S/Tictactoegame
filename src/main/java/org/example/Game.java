@@ -8,12 +8,7 @@ class Tictac
 {
     static final String API="com-api-jar";
     private static final Logger logger=Logger.getLogger(API);
-    static char[][] board;
-    Tictac()
-    {
-        board=new char[3][3];
-    }
-
+    static char[][] board=new char[3][3];
 
     void boarddesign()
     {
