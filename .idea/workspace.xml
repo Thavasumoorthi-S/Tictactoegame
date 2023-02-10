@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c7491e9-b5ae-40e0-84ff-03a59587e166" name="Changes" comment="first commit">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Game.java" afterDir="false" />
-    </list>
+    <list default="true" id="4c7491e9-b5ae-40e0-84ff-03a59587e166" name="Changes" comment="first commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -131,7 +129,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676031897347</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="first commit">
+      <created>1676032034475</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1676032034475</updated>
+    </task>
+    <task id="LOCAL-00014" summary="first commit">
+      <created>1676032246982</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1676032246982</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
