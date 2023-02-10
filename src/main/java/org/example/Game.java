@@ -128,7 +128,8 @@ public class Game
         c=p1;
         while (true)
         {
-            logger.info(c.name+" is playing.......");
+            String names=c.name;
+            logger.log(Level.INFO,()->names+" is playing.......");
             c.move1();
             Tictac.display();
             if(Tictac.horizontalcheck()||Tictac.verticalcheck()||Tictac.diagonalcheck())
