@@ -1,31 +1,31 @@
 package org.example;
+import java.util.Arrays;
 import java.util.Scanner;
 import java.util.logging.Logger;
 
 class Tictac
 {
     private static final Logger logger=Logger.getLogger("com-api-jar");
-    static char[][] board=new char[3][3];
-
-    static void boarddesign()
+    static char[][] board;
+    Tictac()
     {
-        for(int i=0;i<board.length;i++)
-        {
-            for(int j=0;j<board[i].length;j++)
-            {
-                board[i][j]=' ';
-            }
+        board=new char[3][3];
+    }
+
+
+    void boarddesign()
+    {
+        for (char[] chars : board) {
+            Arrays.fill(chars, ' ');
         }
     }
     static void display()
     {
         logger.info("------------");
-        for(int i=0;i<board.length;i++)
-        {
+        for (char[] chars : board) {
             logger.info("|");
-            for(int j=0;j<board[i].length;j++)
-            {
-                logger.info(board[i][j]+" | ");
+            for (char aChar : chars) {
+                logger.info(aChar + " | ");
             }
             logger.info("\n");
             logger.info("------------");
@@ -61,17 +61,13 @@ class Tictac
 
     static boolean diagonalcheck()
     {
-        if((board[0][0]!=' '&&board[0][0]==board[1][1]&&board[1][1]==board[2][2] )||(board[0][2]!=' ' && board[0][2]==board[1][1]&&board[1][1]==board[2][0]))
-        {
-            return  true;
-        }
-        return  false;
+        return (board[0][0] != ' ' && board[0][0] == board[1][1] && board[1][1] == board[2][2]) || (board[0][2] != ' ' && board[0][2] == board[1][1] && board[1][1] == board[2][0]);
     }
 
     static boolean checkdraw() {
-        for (int i = 0; i < board.length; i++) {
-            for (int j = 0; j < board[i].length; j++) {
-                if (board[i][j] == ' ') {
+        for (char[] chars : board) {
+            for (char aChar : chars) {
+                if (aChar == ' ') {
                     return false;
                 }
             }
@@ -124,7 +120,7 @@ public class Game
     public static void main(String[] args)
     {
         Tictac t=new Tictac();
-        Tictac.boarddesign();
+        t.boarddesign();
         person p1=new person("THAVASU",'X');
         person p2=new person("MOORTHI",'O');
         person c;
