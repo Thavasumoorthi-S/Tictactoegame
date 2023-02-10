@@ -106,10 +106,7 @@ class Person
     {
         if(row>=0 &&row<=2 && col>=0 && col<=2)
         {
-            if(Tictac.board[row][col]==' ')
-            {
-                return true;
-            }
+            return Tictac.board[row][col] == ' ';
         }
         logger.info("This row and Column is already played please choose another ");
         return false;
