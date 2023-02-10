@@ -1,6 +1,7 @@
 package org.example;
 import java.util.Arrays;
 import java.util.Scanner;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 class Tictac
@@ -134,8 +135,8 @@ public class Game
             {
                 String name;
                 name=c.name;
-                logger.info(name+" is win the game");
-                logger.info("congratulation "+name);
+                logger.log(Level.INFO,()->name+" is win the game");
+                logger.log(Level.INFO,()->"congratulation "+name);
                 break;
             }
             else if(Tictac.checkdraw())
