@@ -6,8 +6,8 @@ import java.util.logging.Logger;
 
 class Tictac
 {
-    static final String api="com-api-jar";
-    private static final Logger logger=Logger.getLogger(api);
+    static final String API="com-api-jar";
+    private static final Logger logger=Logger.getLogger(API);
     static char[][] board;
     Tictac()
     {
@@ -79,7 +79,7 @@ class Tictac
 }
 class Person
 {
-    private static final Logger logger=Logger.getLogger(Tictac.api);
+    private static final Logger logger=Logger.getLogger(Tictac.API);
     String name;
     char symbol;
 
@@ -115,10 +115,9 @@ class Person
         return false;
     }
 }
-
 public class Game
 {
-    private static final Logger logger=Logger.getLogger(Tictac.api);
+    private static final Logger logger=Logger.getLogger(Tictac.API);
     public static void main(String[] args)
     {
         Tictac t=new Tictac();
