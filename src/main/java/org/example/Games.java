@@ -1,6 +1,4 @@
 package org.example;
-import org.example.Tictac;
-import org.example.Person;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
